@@ -20,9 +20,11 @@ public class MainDemoApp {
         // call the business method
         Account account = new Account();
         accountDAO.addAccount(account, true);
+        accountDAO.doWork();
 
         // call the membership business method
         membershipDAO.addSillyMember();
+        membershipDAO.goToSleep();
 
         // close the context
         context.close();
