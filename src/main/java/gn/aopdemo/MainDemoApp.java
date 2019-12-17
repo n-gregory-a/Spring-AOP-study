@@ -19,7 +19,7 @@ public class MainDemoApp {
 
         // call the business method
         Account account = new Account();
-        accountDAO.addAccount(account);
+        accountDAO.addAccount(account, true);
 
         // call the membership business method
         membershipDAO.addSillyMember();
