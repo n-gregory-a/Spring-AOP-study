@@ -30,6 +30,26 @@ public class MyDemoLoggingAspect {
         // print out the resulting of the method call
         System.out.println("\n=====>>>> result is: " + result);
 
+        // let's post-process the data ... let's modify it :-)
+
+        // convert the account names to uppercase
+        convertAccountNamesToUpperCase(result);
+    }
+
+    private void convertAccountNamesToUpperCase(List<Account> result) {
+
+        // loop through accounts
+        for (Account account: result
+             ) {
+            // get uppercase version name
+            String upperName = account.getName().toUpperCase();
+
+            //update the name on the account
+            account.setName(upperName);
+        }
+
+
+
     }
 
     @Before("gn.aopdemo.aspect.AopExpressions.forDaoNoGetterSetter()")
