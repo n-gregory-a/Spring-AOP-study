@@ -11,6 +11,7 @@
     <modules>
         <module>Read-Joinpoint</module>
         <module>After-returnung-aspect</module>
+        <module>After-throwing</module>
     </modules>
 
     <dependencies>
