@@ -3,11 +3,31 @@ package gn.aopdemo.dao;
 import gn.aopdemo.Account;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class AccountDAO {
 
     private String name;
     private String serviceCode;
+
+    public List<Account> findAccounts() {
+
+        List<Account> accounts = new ArrayList<Account>();
+
+        // create sample accounts
+        Account temp1 = new Account("John", "Silver");
+        Account temp2 = new Account("Madhu", "Platinuv");
+        Account temp3 = new Account("Luca", "Gold");
+
+        // add them to our accounts list
+        accounts.add(temp1);
+        accounts.add(temp2);
+        accounts.add(temp3);
+
+        return accounts;
+    }
 
     public void addAccount(Account account, boolean vipFlag) {
         System.out.println(getClass() +": DOING MY DB WORK: ADDING AN ACCOUNT");
