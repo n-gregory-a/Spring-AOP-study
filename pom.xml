@@ -12,6 +12,7 @@
         <module>Read-Joinpoint</module>
         <module>After-returnung-aspect</module>
         <module>After-throwing</module>
+        <module>After-finaly</module>
     </modules>
 
     <dependencies>
