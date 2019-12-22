@@ -15,6 +15,7 @@
         <module>After-finaly</module>
         <module>Around</module>
         <module>Around-with-logger</module>
+        <module>Around-handle-exception</module>
     </modules>
 
     <dependencies>
